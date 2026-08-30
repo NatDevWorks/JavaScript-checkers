@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character encoding and responsive design -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkers Game</title>
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Main game container -->
+  <main class="game">
+    <h1>Checkers</h1>
+
+    <!-- Game panel section containing the board and controls -->
+    <section class="game-panel" aria-label="Checkers game">
+      <!-- Status display for current player's turn -->
+      <p id="status">Red's turn</p>
+
+      <!-- Checkers board grid -->
+      <div id="board" aria-label="Checkers board"></div>
+
+      <!-- Game controls section -->
+      <div class="controls">
+        <!-- Game mode selector -->
+        <label>
+          Mode
+          <select id="modeSelect">
+            <option value="ai">1 Player vs AI</option>
+            <option value="two">2 Players</option>
+          </select>
+        </label>
+
+        <!-- Button to start a new game -->
+        <button id="resetBtn" type="button">New Game</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
